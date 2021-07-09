@@ -1,0 +1,132 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+ 
+}
+
+div * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#turn {
+  max-width: 451px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: right;
+  border-radius: 30px;
+  border: 1px solid rgb(207, 170, 153);
+  border-style: inset;
+  text-align: center;
+  padding:9px 0 0 0;
+  background: rgb(207, 170, 153);
+  transition: .85s linear;
+}
+
+.turnhighlight {
+  
+  color: rgb(197, 138, 138);
+}
+
+#game{
+  max-width: 504px;
+  max-height: 504px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 20px auto;
+}
+
+.cellprefix {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+  float: left;
+  margin: 3px;
+  padding: 15px 0 0 20px;
+}
+
+.gamecell {
+  border: 1px solid #000;
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+  float: left;
+  margin: 3px;
+  transition: all 0.5s ease-in-out;
+  font-size: 30pt;
+  padding: 0 0 0 6px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.gamecell:hover {
+    color: rgb(223, 187, 163);
+    background: rgba(170, 165, 156, 0.815);
+    z-index: 2;
+    animation: neonBlueText 1.5s ease-in-out infinite alternate;
+  }
+  
+.grey {
+  background: rgba(121, 41, 4, 0.87);
+}
+.white {
+    background: bisque;
+  }
+
+
+.neonblue_txt {
+  animation: neonBlueText 1.5s ease-in-out infinite alternate;
+}
+
+.neonorange_txt {
+  animation: neonOrangeText 1.5s ease-in-out infinite alternate;
+}
+
+.neongreen_txt {
+  animation: neonGreenText 1.5s ease-in-out infinite alternate;
+}
+
+/* --- N E O N    T E X T --- */
+@keyframes neonBlueText {
+  from {
+    text-shadow: 0 0 10px rgb(134, 126, 47), 0 0 20px rgb(214, 195, 19), 0 0 30px rgb(214, 195, 19), 0 0 40px rgb(214, 195, 19),
+      0 0 70px rgb(214, 195, 19), 0 0 80px rgb(214, 195, 19), 0 0 100px rgb(214, 195, 19), 0 0 150px rgb(214, 195, 19);
+  }
+  to {
+    text-shadow: 0 0 5px rgb(214, 195, 19), 0 0 10px rgb(214, 195, 19), 0 0 15px rgb(214, 195, 19), 0 0 20px rgb(214, 195, 19),
+      0 0 35px rgb(214, 195, 19), 0 0 40px rgb(214, 195, 19), 0 0 50px rgb(214, 195, 19), 0 0 75px rgb(214, 195, 19);
+  }
+}
+
+@keyframes neonOrangeText {
+  from {
+    text-shadow: 0 0 10px rgb(216, 196, 12), 0 0 20px rgb(216, 196, 12), 0 0 30px rgb(216, 196, 12), 0 0 40px #ff9900,
+      0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 5px rgb(216, 196, 12), 0 0 10px rgb(216, 196, 12), 0 0 15px rgb(216, 196, 12), 0 0 20px #ff9900,
+      0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+  }
+}
+
+@keyframes neonGreenText {
+  from {
+    text-shadow: 0 0 10px rgb(216, 196, 12), 0 0 20px rgb(216, 196, 12), 0 0 30px rgb(216, 196, 12), 0 0 40px #dd3e0d,
+      0 0 70px #dd3e0d, 0 0 80px #dd3e0d, 0 0 100px #dd3e0d, 0 0 150px #dd3e0d;
+  }
+  to {
+    text-shadow: 0 0 5px rgb(216, 196, 12), 0 0 10px rgb(216, 196, 12), 0 0 15px rgb(216, 196, 12), 0 0 20px #dd3e0d,
+      0 0 35px #dd3e0d, 0 0 40px #dd3e0d, 0 0 50px #dd3e0d, 0 0 75px #dd3e0d;
+  }
+}
+
